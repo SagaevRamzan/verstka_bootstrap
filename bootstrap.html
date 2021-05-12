@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style type="text/css">
+
+
+    </style>
+    <title>bootsrap_verstka</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="log" src="image/logo.svg">
+        </div>
+        <div class="menu">
+            <ul class="sub_menu">
+                <li class="menu_item"><a href="#">одежда</a></li>
+                <li class="menu_item"><a href="#">детям</a></li>
+                <li class="menu_item"><a href="#">книги</a></li>
+                <li class="menu_item"><a href="#">компьютеры</a></li>
+                <li class="menu_item"><a href="#">контакты</a></li>
+            </ul>
+        </div>
+        <div class="last_menu">
+            <div class="cart">
+                <a href="#"><div id="counter" class="counter">0</div></a>
+            </div>
+            <div><a href="#">выход</a></div>
+        </div>
+    </header>
+   <div>
+    <div class="main">
+
+            <div class="main_item">
+                <div class="image_item">
+                    <img class="imag" src="image/nout.jpg">
+                </div>
+                <div>
+                    <p class="name">MacBook</p>
+                    <p class="ozenka">*****</p>
+                    <p class="sum">1000000  ₽</p>
+                </div>
+                <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+            </div>
+        <div class="main_item">
+            <div class="image_item">
+                <img class="imag" src="image/phone.jpeg">
+            </div>
+            <div>
+                <p class="name">Galaxy</p>
+                <p class="ozenka">****</p>
+                <p class="sum">35999  ₽</p>
+            </div>
+            <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+        </div>
+        <div class="main_item">
+            <div class="image_item">
+                <img class="imag" src="image/moto.jpg">
+            </div>
+            <div>
+                <p class="name">Скутер</p>
+                <p class="ozenka">*****</p>
+                <p class="sum">65500  ₽</p>
+            </div>
+            <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+        </div>
+        <div class="main_item">
+            <div class="image_item">
+                <img class="imag" src="image/samsung.jpg">
+            </div>
+            <div>
+                <p class="name">Монитор Samsung</p>
+                <p class="ozenka">***</p>
+                <p class="sum">12000  ₽</p>
+            </div>
+            <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+        </div>
+
+
+    </div>
+       <div class="main">
+
+           <div class="main_item">
+               <div class="image_item">
+                   <img class="imag" src="image/Mask.jpg">
+               </div>
+               <div>
+                   <p class="name">Респераторная маска</p>
+                   <p class="ozenka">*****</p>
+                   <p class="sum">500  ₽</p>
+               </div>
+               <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+           </div>
+           <div class="main_item">
+               <div class="image_item">
+                   <img class="imag" src="image/stir.jpg">
+               </div>
+               <div>
+                   <p class="name">Стиральная машина</p>
+                   <p class="ozenka">***</p>
+                   <p class="sum">1000000  ₽</p>
+               </div>
+               <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+           </div>
+           <div class="main_item">
+               <div class="image_item">
+                   <img class="imag" src="image/holod.jpg">
+               </div>
+               <div>
+                   <p class="name">Белый холодильник</p>
+                   <p class="ozenka">*****</p>
+                   <p class="sum">43100  ₽</p>
+               </div>
+               <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+           </div>
+           <div class="main_item">
+               <div class="image_item">
+                   <img class="imag" src="image/kolon.jpg">
+               </div>
+               <div>
+                   <p class="name">Колонка</p>
+                   <p class="ozenka">****</p>
+                   <p class="sum">3000  ₽</p>
+               </div>
+               <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button">Добавить в корзину</div></a>
+           </div>
+
+
+
+
+       </div>
+       <div class="main">
+
+           <div class="main_item">
+               <div class="image_item">
+                   <img class="imag" src="image/naush.jpg">
+               </div>
+               <div>
+                   <p class="name">Наушники</p>
+                   <p class="ozenka">*****</p>
+                   <p class="sum">1500  ₽</p>
+               </div>
+               <a class="visit_but" href="#"><div onclick="myFunction(this)" class="button" id="button">Добавить в корзину</div></a>
+           </div>
+
+
+
+
+       </div>
+   </div>
+    <script>
+
+        function myFunction(element) {
+
+            let y= Number(document.getElementById("counter").textContent);
+            y=y+1;
+            document.getElementById("counter").textContent=y;
+            element.style.backgroundColor="#254fe8";
+        }
+    </script>
+</body>
+</html>
